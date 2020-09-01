@@ -14,6 +14,7 @@ function buildHistogram(magazine){
 
 function canBuildNote(magazine, note){
   let magazineHistorgram = buildHistogram(magazine);
+  let noteArray = note.split()
   let canBuild = true;
   note.forEach( (letter) => {
     if(letter in magazineHistorgram && magazineHistorgram[letter]> 0){
