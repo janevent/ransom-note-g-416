@@ -13,7 +13,7 @@ function buildHistogram(magazine){
 }
 
 function canBuildNote(magazine, note){
-  let magazineHistorgram = buildHistorgram(magazine);
+  let magazineHistorgram = buildHistogram(magazine);
   let canBuild = true;
   note.forEach( (letter) => {
     if(letter in magazineHistorgram && magazineHistorgram[letter]> 0){
